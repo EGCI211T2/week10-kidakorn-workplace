@@ -28,9 +28,15 @@ void display(struct Time t){
 	}
 	result.h = diffSeconds / 3600;
 	diffSeconds %= 3600;
+	if (result.h <10){
+		cout << "0" << result.h;
+	} else {
+		cout << result.h;
+	}
 	result.m = diffSeconds / 60;
+	cout << ":"<<result.m;
 	result.s = diffSeconds % 60;
-	display(result);
+	cout << ":" << result.s << endl;
 	return result;
 }
 //create 3 functions
