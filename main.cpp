@@ -6,12 +6,18 @@ using namespace std;
 #include "Time.h"
 
 int main(){
-    struct Time t1,t2,t3;
-    cout<<"What time was it?";
+   struct Time t1, t2,t3;
+   cout << "what time????? " << endl;
     getTime(t1);
-    cout<<"What time is it now?";
+
+    cout << "what time is it NOW" << endl;
     getTime(t2);
-    t3=subtract(t2,t1); //t3=t2-t1
-    cout<<"Time diff is ";
-    display(t3);
+
+    cout << "the difference is: " << endl;
+    subtract(t1,t2);    
+
+    return 0;
+
 }
+
+
